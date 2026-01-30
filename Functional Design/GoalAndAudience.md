@@ -1,15 +1,13 @@
 # Goal and target audience 
-I am building this application because I want to build up my portfolio and get back into software engineering and architecture. I have been travelling the world since September 2023 and mainly worked seasonal jobs including Canada, Japan and Australia. 
-Although this has been a lot of fun and I have definitely broadened my horizon and learned so much, I do start to miss some depth and brainpower in my current job. I have also experienced that getting a job overseas is challenging, especially when you have nothing to show except for a CV full of words. 
-For this reason, I wanted to build an application that would show what I am capable off and what my qualities are.
+This application is being developed as a portfolio project to re-establish my focus on software engineering and system architecture, while providing a concrete demonstration of my technical skills. Since September 2023, I have been traveling overseas and working seasonal jobs across Canada, Japan, and Australia. While these experiences have been personally enriching and have strengthened my adaptability and problem-solving in diverse environments, they have also highlighted a growing desire to return to work that demands deeper technical engagement and structured thinking.
+
+This project is intentionally designed to showcase my approach to software development, including architectural decision-making, scalability considerations, and clean, maintainable code. Beyond serving as a functional application, it represents my renewed commitment to software engineering, continuous learning, and building systems with long-term value.
 
 ## Audience
-There are three different audiences at the moment of writing this
-- Users
-- Recruiters and HR Managers
-- Technical staff
-
-I will make sure that for all audiences, the instructions will be clear. For the normal user, all documentation will be irrelevant except for the user manual
+At the time of writing, this application addresses three distinct audiences:
+- **End Users** - Individuals who want to learn or improve their guitar skills. For this audience, the focus will be on clear, intuitive instructions, with the user manual serving as the primary source of guidance. Technical documentation and internal design details will not be relevant.
+- **Recruiters and HR Managers**
+- **Technical staff**
 
 for the recruiters/hr all documentation will be relevant excluding the code itself
 
