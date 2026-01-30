@@ -6,12 +6,11 @@ This project is intentionally designed to showcase my approach to software devel
 ## Audience
 At the time of writing, this application addresses three distinct audiences:
 - **End Users** - Individuals who want to learn or improve their guitar skills. For this audience, the focus will be on clear, intuitive instructions, with the user manual serving as the primary source of guidance. Technical documentation and internal design details will not be relevant.
-- **Recruiters and HR Managers**
-- **Technical staff**
+- **Recruiters and HR Managers**  Professionals reviewing my portfolio. They need documentation that explains the project’s purpose, structure, and outcomes, but they do not need access to the underlying code.
+- **Technical staff** for the technical Staff the whole picture is relevant, from the first steps of how this project came together and how this application is designed to the implementation and different layers and depth of the code
 
-for the recruiters/hr all documentation will be relevant excluding the code itself
 
-for the technical Staff the whole picture is relevant, from the first steps of how this project came together and how this application is designed to the implementation and different layers and depth of the code
+
 
 **Who is the user?**
 
