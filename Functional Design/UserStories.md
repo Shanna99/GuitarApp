@@ -7,28 +7,34 @@ Define and prioritize user stories for the MVP. Include user role, goal, and ben
 ### Sign up
 As a guitarist I want to be able to create an account for the application so that i have my own enviorment
 
-**Acceptance Criteria:**
-- **Given** I am a new user
-- **When** I enter valid account details and submit
-- **Then** my account is created, and I am logged in
+**Acceptance Criteria**
+- User must be on Sign Up page
+- User must provide a valid email create an account.
+- User has to provide a password container the four character sets
+    - Numerical characters such as 12345
+    - Lowercase letters such as abcde
+    - Uppercase letters such as ABCDE
+    - Special characters such as !$%&?
+- Duplicate emails are rejected.
+- After successful sign-up, the user is automatically logged in.
+- Account creation persists data in the database.
 ____________
 
 ### Log in
 As a guitarist, I want to be able to log in to the application so that I can access my account.
 
-**Acceptance Criteria:**
-- **Given** I have an existing account
-- **When** I enter correct login credentials
-- **Then** I enter correct login credentials
+**Acceptance Criteria**
+- Only existing accounts with correct email/password combinations can log in.
+- Invalid credentials are rejected with an error message.
+- Successful login redirects the user to the dashboard.
 ____________
 
 ### Log out
 As a guitarist, I want the ability to log out so I can safely leave the application when I’m done.
 
-**Acceptance Criteria:**
-- **Given** I am logged in
-- **When** I click “Log Out”
-- **Then** I am logged out, and the app returns to the login screen
+**Acceptance Criteria**
+- Clicking “Log Out” ends the session immediately.
+- Logged-out users cannot access protected pages.
 ____________
 
 ### Reset password
