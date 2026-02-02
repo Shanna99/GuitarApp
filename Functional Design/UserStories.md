@@ -50,17 +50,27 @@ ____________
 ### Connect guitar
 As a guitarist, I want to connect my guitar to the application so that the app can receive my guitar signal.
 
-**Acceptance Criteria:**
-- The connection architecture must allow future support for wireless guitar connections.
-- ..
+**Acceptance Criteria**
+- The app detects a guitar plugged into the audio interface.
+- The connection status is displayed as “Connected” only when a signal is present.
+- The app supports one connection at a time in MVP.
+- Architecture allows adding wireless support in the future.
 ____________
 
 ### Reponse conected
 As a guitarist i want to get a noticifaction that my guitar is connected to the application so i know there is a connection
+
+**Acceptance Criteria**
+- When the guitar connects, a notification is shown immediately.
+- Notifications disappear automatically after 3–5 seconds.
 ____________
 
 ### Response Disconected
 As a guitarist i want to get a noticifaction that my guitar is disconnected to the application so i know the connection is broken.
+
+**Acceptance Criteria**
+- When the guitar disconnects, a notification is shown immediately.
+- Notifications disappear automatically after 3–5 seconds.
 ____________
 
 ### Connection status indicator
@@ -70,5 +80,37 @@ ____________
 ### Detect cable connection
 As a guitarist, I want the application to detect when my guitar cable is plugged in so that I know the guitar is available.
 
+## Audio Recognition
 
+### Detect Strings
+**User Story:**  
+As a guitarist, I want the app to detect which string I am playing so that I can see if I am hitting the correct string.
+
+**Acceptance Criteria**
+- The app highlights the string being played
+- Only one string can be detected at a time (MVP).
+- If no string is played, no string is highlighted.
+
+____________
+
+### Detect Notes
+**User Story:**  
+As a guitarist, I want the app to recognize the note I am playing so that I know if it is correct.
+
+**Acceptance Criteria**
+- The app displays the note name corresponding to the detected frequency.
+- Detection is considered correct if the frequency is within ±1 semitone of the target note.
+- Notes outside the detection range are ignored.
+
+____________
+
+
+### Detect Basic Chords
+**User Story:**  
+As a guitarist, I want the app to recognize basic open chords so that I can practice chord accuracy.
+
+**Acceptance Criteria**
+- Only basic open chords (E, A, D, G, C Major, and Em, Am, Dm) are detected in MVP.
+- The chord is displayed only if all notes of the chord are detected simultaneously.
+- Partial chords (missing notes) are indicated as “incorrect.”
 
