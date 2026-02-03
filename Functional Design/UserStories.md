@@ -10,7 +10,7 @@ As a user I want to be able to create an account for the application so that i h
 **Acceptance Criteria**
 - User selects a role during sign-up (default: Guitarist for MVP)
 - User must provide a valid email create an account.
-- User has to provide a password container the four character sets
+- User has to provide a password containing the four character sets
     - Numerical characters (e.g., 12345)
     - Lowercase letters (e.g., abcde)
     - Uppercase letters (e.g., ABCDE)
@@ -43,7 +43,7 @@ As a User, I want to log in to my account so that I can access my personal dashb
 **Acceptance Criteria**
 - Only existing accounts with correct email/password combinations can log in.
 - Invalid credentials are rejected with an error message.
-- Successful login redirects the user to the dashboard.
+- Successful login redirects to role-specific dashboard (Guitarist → Guitarist dashboard).
 
 | Use case scenario |  |
 | --- | --- |
@@ -77,37 +77,24 @@ ____________
 As a User, I want to be able to reset my password so I can regain access if I forget it.
 
 **Acceptance Criteria**
-- ..
--..
+- Emailaddress must belong to an existing user
+- User recieves an email to reset pasword
+- Reset link in the email is valid for 15 minutes.
+- User has to provide a password containing the four character sets
+    - Numerical characters (e.g., 12345)
+    - Lowercase letters (e.g., abcde)
+    - Uppercase letters (e.g., ABCDE)
+    - Special characters (e.g., !$%&?)
 
 
 | Use case scenario |  |
 | --- | --- |
-| **Name**| ..|
-| **Actor**|.. |
-| **Precondition** |.. |
-| **Postcondition**| ..|
-| **Main scenario** | .. |
-| **Exceptions**| .. |
-
-
-### Stay logged in
-As a User, I want to stay logged in between sessions so I don’t have to log in every time.
-
-**Acceptance Criteria**
-- ..
--..
-
-
-| Use case scenario |  |
-| --- | --- |
-| **Name**| ..|
-| **Actor**|.. |
-| **Precondition** |.. |
-| **Postcondition**| ..|
-| **Main scenario** | .. |
-| **Exceptions**| .. |
-____________
+| **Name**| Reset password|
+| **Actor**| User |
+| **Precondition** | Application open|
+| **Postcondition**| Actor is logged in with a new password|
+| **Main scenario** | 1. Actor clicks on "Reset password" <br> 2. Actor enters their email address <br> 3. Actor recieves email with link to reset password <br> 4. Actor clicks link in email to reset password. <br> 5. Actor is redirected to the reset password screen <br> 6. Actor enters a new password following the password rules <br> 7. Actor submits form. <br> 8. Actor is logged in automatically|
+| **Exceptions**| 1. Email address does not exist [Error message: "Email not found"] <br> 2. Reset link expires [Error message: "Link expired, please request a new password reset"] <br> 3. Password does not meet requirements [Error message: "Password does not meet security requirements"]|
 
 ## Conect guitar to application
 
