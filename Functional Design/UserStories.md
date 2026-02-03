@@ -5,27 +5,27 @@ Define and prioritize user stories for the MVP. Include user role, goal, and ben
 ## Account
 
 ### Sign up
-As a guitarist I want to be able to create an account for the application so that i have my own enviorment
+As a guitarist I want to be able to create an account for the application so that i have my own environment
 
 **Acceptance Criteria**
 - User must provide a valid email create an account.
 - User has to provide a password container the four character sets
-    - Numerical characters such as 12345
-    - Lowercase letters such as abcde
-    - Uppercase letters such as ABCDE
-    - Special characters such as !$%&?
+    - Numerical characters (e.g., 12345)
+    - Lowercase letters (e.g., abcde)
+    - Uppercase letters (e.g., ABCDE)
+    - Special characters (e.g., !$%&?)
 - Duplicate emails are rejected.
-- An account is created in an unconfirmed state
+- Account is created in an unconfirmed state
 - A confirmation email is sent after successful sign-up
 - The email contains a confirmation link
     - Clicking the link within 24h activates the account
     - User cannot log in before confirming the email
-- The account becomes active when the link is confirmed
+- After confirming, the account becomes active.
 - After successful sign-up, the user is automatically logged in.
 - Account creation persists data in the database.
 
 | Use case scenario |  |
-|------------------|--|
+|---|---|
 | **Name** | Sign up |
 | **Actor** | Guitarist |
 | **Precondition** | Application is open |
@@ -37,7 +37,7 @@ As a guitarist I want to be able to create an account for the application so tha
 ____________
 
 ### Log in
-As a guitarist, I want to be able to log in to the application so that I can access my account.
+As a guitarist, I want to log in to my account so that I can access my personal dashboard.
 
 **Acceptance Criteria**
 - Only existing accounts with correct email/password combinations can log in.
@@ -46,12 +46,12 @@ As a guitarist, I want to be able to log in to the application so that I can acc
 
 | Use case scenario |  |
 | --- | --- |
-| **Name**| ..|
-| **Actor**|.. |
-| **Precondition** |.. |
-| **Postcondition**| ..|
-| **Main scenario** | .. |
-| **Exceptions**| .. |
+| **Name**| Log in|
+| **Actor**| Guitarist |
+| **Precondition** | Actor has to have existing account |
+| **Postcondition**| Actor is logged in|
+| **Main scenario** | 1. Actor opens log in screen <br> 2. Actor fills in email and password combination <br> 3. Actor clicks on Log in button  |
+| **Exceptions**| 1. Email and password combination does not exist [Error message; Email and password combination not found ] |
 ____________
 
 ### Log out
@@ -60,15 +60,16 @@ As a guitarist, I want the ability to log out so I can safely leave the applicat
 **Acceptance Criteria**
 - Clicking “Log Out” ends the session immediately.
 - Logged-out users cannot access protected pages.
+- After logging out, the user is redirected to the login page. 
 
 | Use case scenario |  |
 | --- | --- |
-| **Name**| ..|
-| **Actor**|.. |
-| **Precondition** |.. |
-| **Postcondition**| ..|
-| **Main scenario** | .. |
-| **Exceptions**| .. |
+| **Name**| Log out|
+| **Actor**| Guitarist |
+| **Precondition** | Actor is logged in |
+| **Postcondition**| Actor is logged out|
+| **Main scenario** | 1. Actor clicks on log out button |
+| **Exceptions**| 1. Session has already expired [User is redirected to login page with a message “Session expired, please log in again”] |
 ____________
 
 ### Reset password
