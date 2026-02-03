@@ -1,13 +1,14 @@
 # User stories
 
-Define and prioritize user stories for the MVP. Include user role, goal, and benefit, with clear acceptance criteria for each story. Focus on core features needed for initial release.
+This document contains all the use cases that have been implemented or are planned to be implemented in the MVP version of the application. Each use case includes a user story, acceptance criteria, and a use case scenario with preconditions, postconditions, the main scenario, and exceptions/error handling. Currently, the application has only one user type: the Guitarist.
 
 ## Account
 
 ### Sign up
-As a guitarist I want to be able to create an account for the application so that i have my own environment
+As a user I want to be able to create an account for the application so that i have my own environment
 
 **Acceptance Criteria**
+- User selects a role during sign-up (default: Guitarist for MVP)
 - User must provide a valid email create an account.
 - User has to provide a password container the four character sets
     - Numerical characters (e.g., 12345)
@@ -27,7 +28,7 @@ As a guitarist I want to be able to create an account for the application so tha
 | Use case scenario |  |
 |---|---|
 | **Name** | Sign up |
-| **Actor** | Guitarist |
+| **Actor** | User |
 | **Precondition** | Application is open |
 | **Postcondition** | Actor has created an active account |
 | **Main scenario** | 1. Actor clicks the "Sign up" button<br>2. Actor fills in all required information<br>3. Actor submits the form<br>4. Actor receives a confirmation email<br>5. Actor confirms account via email |
@@ -37,7 +38,7 @@ As a guitarist I want to be able to create an account for the application so tha
 ____________
 
 ### Log in
-As a guitarist, I want to log in to my account so that I can access my personal dashboard.
+As a User, I want to log in to my account so that I can access my personal dashboard.
 
 **Acceptance Criteria**
 - Only existing accounts with correct email/password combinations can log in.
@@ -47,7 +48,7 @@ As a guitarist, I want to log in to my account so that I can access my personal 
 | Use case scenario |  |
 | --- | --- |
 | **Name**| Log in|
-| **Actor**| Guitarist |
+| **Actor**| User |
 | **Precondition** | Actor has to have existing account |
 | **Postcondition**| Actor is logged in|
 | **Main scenario** | 1. Actor opens log in screen <br> 2. Actor fills in email and password combination <br> 3. Actor clicks on Log in button  |
@@ -55,7 +56,7 @@ As a guitarist, I want to log in to my account so that I can access my personal 
 ____________
 
 ### Log out
-As a guitarist, I want the ability to log out so I can safely leave the application when I’m done.
+As a User, I want the ability to log out so I can safely leave the application when I’m done.
 
 **Acceptance Criteria**
 - Clicking “Log Out” ends the session immediately.
@@ -65,7 +66,7 @@ As a guitarist, I want the ability to log out so I can safely leave the applicat
 | Use case scenario |  |
 | --- | --- |
 | **Name**| Log out|
-| **Actor**| Guitarist |
+| **Actor**| User |
 | **Precondition** | Actor is logged in |
 | **Postcondition**| Actor is logged out|
 | **Main scenario** | 1. Actor clicks on log out button |
@@ -73,7 +74,7 @@ As a guitarist, I want the ability to log out so I can safely leave the applicat
 ____________
 
 ### Reset password
-As a guitarist, I want to be able to reset my password so I can regain access if I forget it.
+As a User, I want to be able to reset my password so I can regain access if I forget it.
 
 **Acceptance Criteria**
 - ..
@@ -91,7 +92,7 @@ As a guitarist, I want to be able to reset my password so I can regain access if
 
 
 ### Stay logged in
-As a guitarist, I want to stay logged in between sessions so I don’t have to log in every time.
+As a User, I want to stay logged in between sessions so I don’t have to log in every time.
 
 **Acceptance Criteria**
 - ..
