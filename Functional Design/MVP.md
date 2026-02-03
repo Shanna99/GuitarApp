@@ -7,7 +7,7 @@
 A clean guitar-learning application that allows a guitarist to connect their guitar using either a wired or wireless connection.
 The application listens to the guitar input and provides real-time feedback by recognizing played strings, notes, and chords.
 
-The MVP should address a single core problem for a specific user through one primary action. It should be developed with a clean, modular, and scalable architecture, ensuring that new features can be added and the application can evolve smoothly over time.
+The MVP should address a single core problem for a specific user through one primary action. It should be developed with a clean, modular, and scalable architecture, ensuring that new features and users can be added and the application can evolve smoothly over time.
 
 **Core User:** Guitarist (beginner to intermediate)
 Wants to practice and learn guitar effectively using real-time feedback.
