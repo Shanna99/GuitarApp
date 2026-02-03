@@ -5,11 +5,11 @@ This document contains all the use cases that have been implemented or are plann
 ## Account
 
 ### Sign up
-As a user I want to be able to create an account for the application so that i have my own environment
+As a user I want to be able to create an account for the application so that I have my own environment
 
 **Acceptance Criteria**
 - User selects a role during sign-up (default: Guitarist for MVP)
-- User must provide a valid email create an account.
+- User must provide a valid email to create an account.
 - User has to provide a password containing the four character sets
     - Numerical characters (e.g., 12345)
     - Lowercase letters (e.g., abcde)
@@ -78,7 +78,7 @@ As a User, I want to be able to reset my password so I can regain access if I fo
 
 **Acceptance Criteria**
 - Emailaddress must belong to an existing user
-- User recieves an email to reset pasword
+- User receives an email to reset password
 - Reset link in the email is valid for 15 minutes.
 - User has to provide a password containing the four character sets
     - Numerical characters (e.g., 12345)
@@ -93,10 +93,10 @@ As a User, I want to be able to reset my password so I can regain access if I fo
 | **Actor**| User |
 | **Precondition** | Application open|
 | **Postcondition**| Actor is logged in with a new password|
-| **Main scenario** | 1. Actor clicks on "Reset password" <br> 2. Actor enters their email address <br> 3. Actor recieves email with link to reset password <br> 4. Actor clicks link in email to reset password. <br> 5. Actor is redirected to the reset password screen <br> 6. Actor enters a new password following the password rules <br> 7. Actor submits form. <br> 8. Actor is logged in automatically|
+| **Main scenario** | 1. Actor clicks on "Reset password" <br> 2. Actor enters their email address <br> 3. Actor receives email with link to reset password <br> 4. Actor clicks link in email to reset password. <br> 5. Actor is redirected to the reset password screen <br> 6. Actor enters a new password following the password rules <br> 7. Actor submits form. <br> 8. Actor is logged in automatically|
 | **Exceptions**| 1. Email address does not exist [Error message: "Email not found"] <br> 2. Reset link expires [Error message: "Link expired, please request a new password reset"] <br> 3. Password does not meet requirements [Error message: "Password does not meet security requirements"]|
 
-## Conect guitar to application
+## Connect  guitar to application
 
 ### Connect guitar
 As a guitarist, I want to connect my guitar to the application so that the app can receive my guitar signal.
@@ -118,8 +118,8 @@ As a guitarist, I want to connect my guitar to the application so that the app c
 | **Exceptions**| .. |
 ____________
 
-### Reponse conected
-As a guitarist i want to get a noticifaction that my guitar is connected to the application so i know there is a connection
+### Response connected
+As a guitarist I want to get a noticifaction that my guitar is connected to the application so i know there is a connection
 
 **Acceptance Criteria**
 - When the guitar connects, a notification is shown immediately.
@@ -136,8 +136,8 @@ As a guitarist i want to get a noticifaction that my guitar is connected to the 
 | **Exceptions**| .. |
 ____________
 
-### Response Disconected
-As a guitarist i want to get a noticifaction that my guitar is disconnected to the application so i know the connection is broken.
+### Response Disconnected
+As a guitarist I want to get a noticifaction that my guitar is disconnected from the application so I know the connection is broken.
 
 **Acceptance Criteria**
 - When the guitar disconnects, a notification is shown immediately.
@@ -193,7 +193,7 @@ As a guitarist, I want the application to detect when my guitar cable is plugged
 
 ### Detect Strings
 **User Story:**  
-As a guitarist, I want the app to detect which string I am playing so that I can see if I am hitting the correct string.
+As a guitarist, I want the app to detect which string I am playing so that I can see whether I am playing the correct string.
 
 **Acceptance Criteria**
 - The app highlights the string being played
@@ -214,7 +214,7 @@ ____________
 
 ### Detect Notes
 **User Story:**  
-As a guitarist, I want the app to recognize the note I am playing so that I know if it is correct.
+As a guitarist, I want the app to recognize the note I am playing so that I know whether it is correct
 
 **Acceptance Criteria**
 - The app displays the note name corresponding to the detected frequency.
