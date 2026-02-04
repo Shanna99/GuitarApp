@@ -1,12 +1,10 @@
 # Repo structure 
 
-## Merge Strategy
+This is how the files and folders in your repository are organized.
 
-During the build of the MVP, squash merging will be used to keep the commit history clean.
+Think of it as the “physical layout” of your project.
 
-As the app matures, there might be a switch to regular merges (no squash), as keeping individual commits could become more important. 
-
-Reasons for this could include:
-- Needing a more detailed audit/history
-- Multiple developers working parallel
-- Relying (heavily) on commit-level debugging
+1. Root Directory
+2. Common Folder Details
+3. Optional Folders
+4. Branching Structure
