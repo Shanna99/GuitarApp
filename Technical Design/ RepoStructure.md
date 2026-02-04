@@ -1,4 +1,6 @@
-# Merge Strategy
+# Repo structure 
+
+## Merge Strategy
 
 During the build of the MVP, squash merging will be used to keep the commit history clean.
 
