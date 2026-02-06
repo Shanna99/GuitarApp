@@ -1,29 +1,33 @@
 ```mermaid
-%% Use Case Diagram for Guitar Learning Application
+%% Use Case Diagram for a Guitar Learning Application
+%% Mermaid syntax
 
-%% Mermaid uses "usecaseDiagram" without spaces
-%% Use "actor" and "usecase" properly
+%% Define the diagram type
+usecaseDiagram
 
-%% Define actors
+%% Actors
 actor User
 actor Instructor
 
-%% Define use cases
-usecase "View Lessons" as UC1
-usecase "Practice Exercises" as UC2
-usecase "Track Progress" as UC3
-usecase "Access Tips & Techniques" as UC4
-usecase "Upload Lessons" as UC5
-usecase "Review Student Progress" as UC6
+%% Use cases
+User --> (View Lessons)
+User --> (Practice Exercises)
+User --> (Track Progress)
+User --> (Access Tips & Techniques)
 
-%% Link actors to use cases
-User --> UC1
-User --> UC2
-User --> UC3
-User --> UC4
+Instructor --> (Upload Lessons)
+Instructor --> (Review Student Progress)
 
-Instructor --> UC5
-Instructor --> UC6
+%% Optional: System boundary
+%% rectangle System {
+%%     (View Lessons)
+%%     (Practice Exercises)
+%%     (Track Progress)
+%%     (Access Tips & Techniques)
+%%     (Upload Lessons)
+%%     (Review Student Progress)
+%% }
+
 
 ```
 https://mermaid.live/
