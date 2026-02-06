@@ -1,3 +1,4 @@
+```mermaid
 %% Use Case Diagram for Guitar Learning Application
 
 %% Mermaid uses "usecaseDiagram" without spaces
@@ -24,3 +25,5 @@ User --> UC4
 Instructor --> UC5
 Instructor --> UC6
 
+```
+https://mermaid.live/
