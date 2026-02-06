@@ -1,13 +1,13 @@
-# The scope of the Mininmum valueble product (MVP)
+# The scope of the Minimum valuable product (MVP)
 
 ## Set up project skeleton - Sprint 0
 **Goal:** Help a guitarist know what they are playing and whether it is correct.
 
-**What do i want the application to do?**
+**What do I want the application to do?**
 A clean guitar-learning application that allows a guitarist to connect their guitar using either a wired or wireless connection.
 The application listens to the guitar input and provides real-time feedback by recognizing played strings, notes, and chords.
 
-The MVP should address a single core problem for a specific user through one primary action. It should be developed with a clean, modular, and scalable architecture, ensuring that new features and users can be added and the application can evolve smoothly over time.
+The MVP should address a single core problem for a specific user through one primary action. It should be developed with a clean, modular, and scalable architecture, ensuring that new features and users can be added, and the application can evolve smoothly over time.
 
 **Core User:** Guitarist (beginner to intermediate)
 Wants to practice and learn guitar effectively using real-time feedback.
@@ -18,8 +18,8 @@ Wants to practice and learn guitar effectively using real-time feedback.
 
 **MVP functionalities** 
 1. Account Management 
-    - Sign up, login, logout
-    - Provide a personal practice environment
+    - Sign up, login, logout.
+    - Provide a personal practice environment.
 2. Guitar connection 
     - Connect guitar (wired in MVP, wireless-ready for the future)
     - Detect connection status 
@@ -30,5 +30,5 @@ Wants to practice and learn guitar effectively using real-time feedback.
     - Detect single notes
     - Detect basic chords (open chords only)
 5. Basic visual feedback 
-    - Indicate correct vs incorrect notes/chords
+    - Indicate correct vs incorrect notes/chords.
 
