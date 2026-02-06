@@ -1,17 +1,16 @@
 # Goal and target audience 
-This application is being developed as a portfolio project to re-establish my focus on software engineering and system architecture, while providing a concrete demonstration of my technical skills. Since September 2023, I have been traveling overseas and working seasonal jobs across Canada, Japan, and Australia. While these experiences have been personally enriching and have strengthened my adaptability and problem-solving in diverse environments, they have also highlighted a growing desire to return to work that demands deeper technical engagement and structured thinking.
+I am developing this application as a portfolio project to re-establish my focus on software engineering and system architecture while demonstrating my technical skills. Since September 2023, I have been traveling overseas and working seasonal jobs across Canada, Japan, and Australia. While these experiences have been personally enriching and have strengthened my adaptability and problem-solving in diverse environments, they have also highlighted a growing desire to return to work that demands deeper technical engagement and structured thinking.
 
-This project is intentionally designed to showcase my approach to software development, including architectural decision-making, scalability considerations, and clean, maintainable code. Beyond serving as a functional application, it represents my renewed commitment to software engineering, continuous learning, and building systems with long-term value.
+I intentionally designed this project to showcase my approach to software development, including architectural decision-making, scalability considerations, and clean, maintainable code. Beyond serving as a functional application, it represents my renewed commitment to software engineering, continuous learning, and building systems with long-term value.
 
 ## Audience
 At the time of writing, this application addresses three distinct audiences:
-- **End Users** - Individuals who want to learn or improve their guitar skills. For this audience, the focus will be on clear, intuitive instructions, with the user manual serving as the primary source of guidance. Technical documentation and internal design details will not be relevant.
-- **Recruiters and HR Managers**
-- **Technical staff**
+- **End Users** Individuals who want to learn or improve their guitar skills. For this audience, the focus will be on clear, intuitive instructions, with the user manual serving as the primary source of guidance. Technical documentation and internal design details will not be relevant.
+- **Recruiters and HR Managers** Professionals reviewing my portfolio. They need documentation that explains the project’s purpose, structure, and outcomes, but they do not need access to the underlying code.
+- **Technical staff** For the technical staff, the whole picture matters: from the initial steps of bringing this project together and designing the application to implementing it and exploring the different layers and depth of the code.
 
-for the recruiters/hr all documentation will be relevant excluding the code itself
 
-for the technical Staff the whole picture is relevant, from the first steps of how this project came together and how this application is designed to the implementation and different layers and depth of the code
+
 
 **Who is the user?**
 
@@ -24,7 +23,7 @@ The user wants this application because they value progression and consistent fe
 
 ## Goal
 
-The goal of this application is to guide individuals who enjoy playing the guitar, as well as those who aspire to learn how to play, in a structured and effective direction that supports skill improvement and the acquisition of new techniques. The application aims to stimulate enthusiasm for music-making while promoting continuous learning and the development of new skills.
+The goal of this application is to guide individuals who enjoy playing the guitar and those who aspire to learn. It provides a structured and effective path that supports skill improvement and helps users acquire new techniques. The application aims to stimulate enthusiasm for music-making while promoting continuous learning and the development of new skills.
 
 **Technical goal**
 
