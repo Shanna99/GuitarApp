@@ -129,15 +129,17 @@ As a guitarist, I want the app to detect which string I am playing so that I can
 - The app highlights the string being played
 - Only one string can be detected at a time (MVP).
 - If no string is played, no string is highlighted.
+- The system ignores noise or signals outside guitar range
+- The highlight disappears after 2 sec or when another string is played
 
 | Use case scenario |  |
 | --- | --- |
 | **Name**| Detect Strings|
-| **Actor**| Guitartist |
+| **Actor**| Guitarist |
 | **Precondition** |Guitar is connected  |
-| **Postcondition**| ..|
-| **Main scenario** | .. |
-| **Exceptions**| .. |
+| **Postcondition**| The string being played is highlighted in the application |
+| **Main scenario** | 1. Actor plays a string on the guitar <br> 2. audio interface detects the signal from the string played <br> 3. The application highlights the string being played in the UI and notifies the actor of the detected string.  |
+| **Exceptions**| 1. audio interface does not detect signal [Error message: "No input detected"] <br> 2. Application does not notify actor [Error message: "Detection failed"] |
 
 
 ____________
@@ -150,15 +152,19 @@ As a guitarist, I want the app to recognize the note I am playing so that I know
 - The app displays the note name corresponding to the detected frequency.
 - Detection is considered correct if the frequency is within ±1 semitone of the target note.
 - Notes outside the detection range are ignored.
+- The app displays the detected note in the UI and provides feedback to the actor.
+- The system handles multiple quick notes (e.g., hammer-ons) correctly
+- Notes detected are logged for practice statistics
+- System ignores noise or other instruments
 
 | Use case scenario |  |
 | --- | --- |
-| **Name**| ..|
-| **Actor**|.. |
-| **Precondition** |.. |
-| **Postcondition**| ..|
-| **Main scenario** | .. |
-| **Exceptions**| .. |
+| **Name**| Detect Notes |
+| **Actor**| Guitarist |
+| **Precondition** | Guitar is connected  |
+| **Postcondition**| The note being played is displayed in the application|
+| **Main scenario** | 1. Actor plays a note on the guitar <br> 2. Audio interface detects the signal from the note played <br> 3. The app displays the detected note in the UI and provides visual feedback to the actor |
+| **Exceptions**| 1. audio interface does not detect signal [Error message: "No input detected"] <br> 2. Application does not notify actor [Error message: "Detection failed"] |
 
 
 ____________
@@ -172,14 +178,15 @@ As a guitarist, I want the app to recognize basic open chords so that I can prac
 - Only basic open chords (E, A, D, G, C Major, and Em, Am, Dm) are detected in MVP.
 - The chord is displayed only if all notes of the chord are detected simultaneously.
 - Partial chords (missing notes) are indicated as “incorrect.”
+- Detect chords even if slight timing differences exist between strings (tolerance ±50ms per string)
 
 | Use case scenario |  |
 | --- | --- |
-| **Name**| ..|
-| **Actor**|.. |
-| **Precondition** |.. |
-| **Postcondition**| ..|
-| **Main scenario** | .. |
-| **Exceptions**| .. |
+| **Name**| Detect Basic Chords|
+| **Actor**| Guitarist |
+| **Precondition** | Guitar is connected |
+| **Postcondition**| The detected chord is displayed in the application if correct; partial chords are indicated as incorrect.|
+| **Main scenario** | 1. Actor plays a chord on the guitar <br> 2. Audio interface detects the signal from the chord played <br> 3. The application displays the detected chord in the UI; if the chord is correct, it is marked as correct, otherwise it is marked as incorrect. |
+| **Exceptions**| 1. audio interface does not detect signal [Error message: "No input detected"] <br> 2. Application does not notify actor [Error message: "Detection failed"] |
 
 
