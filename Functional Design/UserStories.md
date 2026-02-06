@@ -132,9 +132,9 @@ As a guitarist, I want the app to detect which string I am playing so that I can
 
 | Use case scenario |  |
 | --- | --- |
-| **Name**| ..|
-| **Actor**|.. |
-| **Precondition** |.. |
+| **Name**| Detect Strings|
+| **Actor**| Guitartist |
+| **Precondition** |Guitar is connected  |
 | **Postcondition**| ..|
 | **Main scenario** | .. |
 | **Exceptions**| .. |
