@@ -1,6 +1,6 @@
 # User stories
 
-This document describes all use cases implemented or planned for the MVP version of the application. Each use case includes a user story, acceptance criteria, and a use case scenario with preconditions, post-conditions, the main scenario, and exceptions/error handling. Currently, the application has only one user type: the Guitarist.
+This document describes all use cases implemented or planned for the MVP version of the application. Each use case includes a user story, acceptance criteria, and a use case scenario with preconditions, post-conditions, the main scenario, and exceptions/error handling. Currently, the application has only one user type: the User.
 
 ## Account
 
@@ -10,7 +10,7 @@ As a user I want to be able to create an account for the application so that I h
 
 **Acceptance Criteria**
 
-- User selects a role during sign-up (default: Guitarist for MVP)
+- User selects a role during sign-up (default: User for MVP)
 - User must provide a valid email to create an account.
 - User has to provide a password containing the four character sets
   - Numerical characters (e.g., 12345)
@@ -45,7 +45,7 @@ As a User, I want to log in to my account so that I can access my personal dashb
 **Acceptance Criteria**
 - Only existing accounts with correct email/password combinations can log in.
 - Invalid credentials are rejected with an error message.
-- Successful login redirects to role-specific dashboard (Guitarist → Guitarist dashboard).
+- Successful login redirects to role-specific dashboard (User → User dashboard).
 
 | Use case scenario |  |
 | --- | --- |
@@ -103,7 +103,7 @@ As a User, I want to be able to reset my password, so I can regain access if I f
 ## Connect guitar to application
 
 ### Connect guitar
-As a guitarist, I want to connect my guitar to the audio interface used by the application so that the app can receive my guitar signal.
+As a User, I want to connect my guitar to the audio interface used by the application so that the app can receive my guitar signal.
 
 **Acceptance Criteria**
 - The app detects a guitar plugged into the audio interface.
@@ -115,7 +115,7 @@ As a guitarist, I want to connect my guitar to the audio interface used by the a
 | Use case scenario |  |
 | --- | --- |
 | **Name**| Connect guitar|
-| **Actor**| Guitarist |
+| **Actor**| User |
 | **Precondition** | Actor is logged into the app |
 | **Post-condition**| Guitar input is available for use within the application |
 | **Main scenario** | 1. Actor connects the guitar to the audio interface using a cable. <br> 2. The system detects the audio interface and incoming guitar signal. <br> 3. The system updates the connection status to “Connected” and displays a visual notification confirming the connection. <br> 4. Actor receives a notification if guitar is connected|
@@ -127,7 +127,7 @@ ____________
 
 ### Detect Strings
 **User Story:**  
-As a guitarist, I want the app to detect which string I am playing so that I can see whether I am playing the correct string.
+As a User, I want the app to detect which string I am playing so that I can see whether I am playing the correct string.
 
 **Acceptance Criteria**
 - The app highlights the string being played.
@@ -139,7 +139,7 @@ As a guitarist, I want the app to detect which string I am playing so that I can
 | Use case scenario |  |
 | --- | --- |
 | **Name**| Detect Strings|
-| **Actor**| Guitarist |
+| **Actor**| User |
 | **Precondition** |Guitar is connected  |
 | **Post-condition**| The string being played is highlighted in the application |
 | **Main scenario** | 1. Actor plays a string on the guitar <br> 2. Audio interface detects the signal from the string played <br> 3. The application highlights the string being played in the UI and notifies the actor of the detected string.  |
@@ -150,7 +150,7 @@ ____________
 
 ### Detect Notes
 **User Story:**  
-As a guitarist, I want the app to recognize the note I am playing so that I know whether it is correct
+As a User, I want the app to recognize the note I am playing so that I know whether it is correct
 
 **Acceptance Criteria**
 - The app displays the note name corresponding to the detected frequency.
@@ -164,7 +164,7 @@ As a guitarist, I want the app to recognize the note I am playing so that I know
 | Use case scenario |  |
 | --- | --- |
 | **Name**| Detect Notes |
-| **Actor**| Guitarist |
+| **Actor**| User |
 | **Precondition** | Guitar is connected  |
 | **Post-condition**| The note being played is displayed in the application|
 | **Main scenario** | 1. Actor plays a note on the guitar <br> 2. Audio interface detects the signal from the note played <br> 3. The app displays the detected note in the UI and provides visual feedback to the actor |
@@ -176,7 +176,7 @@ ____________
 
 ### Detect Basic Chords
 **User Story:**  
-As a guitarist, I want the app to recognize basic open chords so that I can practice chord accuracy.
+As a User, I want the app to recognize basic open chords so that I can practice chord accuracy.
 
 **Acceptance Criteria**
 - Only basic open chords (E, A, D, G, C Major, and Em, Am, Dm) are detected in MVP.
@@ -187,7 +187,7 @@ As a guitarist, I want the app to recognize basic open chords so that I can prac
 | Use case scenario |  |
 | --- | --- |
 | **Name**| Detect Basic Chords|
-| **Actor**| Guitarist |
+| **Actor**| User |
 | **Precondition** | Guitar is connected |
 | **Post-condition**| The detected chord is displayed in the application if correct; partial chords are indicated as incorrect.|
 | **Main scenario** | 1. Actor plays a chord on the guitar <br> 2. Audio interface detects the signal from the chord played <br> 3. The application displays the detected chord in the UI; if the chord is correct, it is marked as correct, otherwise it is marked as incorrect. |
