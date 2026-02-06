@@ -99,95 +99,25 @@ As a User, I want to be able to reset my password so I can regain access if I fo
 ## Connect  guitar to application
 
 ### Connect guitar
-As a guitarist, I want to connect my guitar to the application so that the app can receive my guitar signal.
+As a guitarist, I want to connect my guitar to the audio interface used by the application so that the app can receive my guitar signal.
 
 **Acceptance Criteria**
 - The app detects a guitar plugged into the audio interface.
-- The connection status is displayed as “Connected” only when a signal is present.
+- The connection status is continiously displayed as “Connected” only when a signal is present.
 - The app supports one connection at a time in MVP.
 - Architecture allows adding wireless support in the future.
 
 
 | Use case scenario |  |
 | --- | --- |
-| **Name**| ..|
-| **Actor**|.. |
-| **Precondition** |.. |
-| **Postcondition**| ..|
-| **Main scenario** | .. |
-| **Exceptions**| .. |
+| **Name**| Connect guitar|
+| **Actor**| Guitarist |
+| **Precondition** | Actor is logged into the app |
+| **Postcondition**| Guitar input is available for use within the application |
+| **Main scenario** | 1. Actor connects the guitar to the audio interface using a cable. <br> 2. The system detects the audio interface and incoming guitar signal. <br> 3. The system updates the connection status to “Connected” and displays a visual notification confirming the connection. <br> 4. Actor receives a notifcation if guitar is connected|
+| **Exceptions**| 1. No signal detected: The guitar is connected, but no audio signal is detected [Error message: “No input signal detected” and connection status remains “Disconnected”] . <br> 2. Guitar does not connect [The system displays an error message and the connection fails. ] |
+
 ____________
-
-### Response connected
-As a guitarist I want to get a noticifaction that my guitar is connected to the application so i know there is a connection
-
-**Acceptance Criteria**
-- When the guitar connects, a notification is shown immediately.
-- Notifications disappear automatically after 3–5 seconds.
-
-
-| Use case scenario |  |
-| --- | --- |
-| **Name**| ..|
-| **Actor**|.. |
-| **Precondition** |.. |
-| **Postcondition**| ..|
-| **Main scenario** | .. |
-| **Exceptions**| .. |
-____________
-
-### Response Disconnected
-As a guitarist I want to get a noticifaction that my guitar is disconnected from the application so I know the connection is broken.
-
-**Acceptance Criteria**
-- When the guitar disconnects, a notification is shown immediately.
-- Notifications disappear automatically after 3–5 seconds.
-
-
-| Use case scenario |  |
-| --- | --- |
-| **Name**| ..|
-| **Actor**|.. |
-| **Precondition** |.. |
-| **Postcondition**| ..|
-| **Main scenario** | .. |
-| **Exceptions**| .. |
-____________
-
-### Connection status indicator
-As a guitarist, I want to see the current connection status of my guitar so I always know whether it’s connected.
-
-**Acceptance Criteria**
-- ..
--..
-
-
-| Use case scenario |  |
-| --- | --- |
-| **Name**| ..|
-| **Actor**|.. |
-| **Precondition** |.. |
-| **Postcondition**| ..|
-| **Main scenario** | .. |
-| **Exceptions**| .. |
-____________
-
-### Detect cable connection
-As a guitarist, I want the application to detect when my guitar cable is plugged in so that I know the guitar is available.
-
-**Acceptance Criteria**
-- ..
--..
-
-
-| Use case scenario |  |
-| --- | --- |
-| **Name**| ..|
-| **Actor**|.. |
-| **Precondition** |.. |
-| **Postcondition**| ..|
-| **Main scenario** | .. |
-| **Exceptions**| .. |
 
 ## Audio Recognition
 
