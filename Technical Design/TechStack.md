@@ -1,16 +1,15 @@
 # Technology Stack
 
-I want this appliaction to be scalable over multiplatforms like xbox playstation and pc. For the MVP it might not be game worhty but the intention would be good 
-
 ## Frontend: framework, language
+I want this application to be scalable across multiple platforms, including PC, Xbox, PlayStation, and mobile. While the MVP may not be game-level, the intention is to build a foundation that can grow.
 
-for this reason the choose is made to use c# + unity as it runs on different divices like pc xbox playstation and mobile. c# also has a storng audio siupport, mature ecosystem and its easy to scale from a mvp to a enterprice application. its also console friendly can have one codebase over many platforms
+For this reason, I chose C# with Unity, as it allows the application to run on a wide range of devices with a single codebase. C# offers strong audio support, a mature ecosystem, and makes it easy to scale from an MVP to a more robust, enterprise-level application. It is also console-friendly, enabling consistent development across multiple platforms.
 
 unity is for USI and visuals
 
 
 ## Backend: framework, language
-the backend would be writen in
+The backend will be written in ASP.NET/C#. I considered C++, but this isn’t a AAA game, and C# is a solid choice for demonstrating my skills and designing a strong architecture without overcomplicating development. I’m building this app entirely on my own, so using C# allows me to move quickly while still creating a durable, maintainable system. This project is more of a portfolio-proof-of-concept MVP than an enterprise product. That said, I’m designing the architecture to be optimal, efficient, and high-performance, ensuring the application is as fast and scalable as possible while leveraging C#’s stability and capabilities.
 
 
 - Database: SQL / NoSQL
