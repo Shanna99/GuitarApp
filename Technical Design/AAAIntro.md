@@ -13,4 +13,13 @@ The purpose of this document is to:
 - Define **coding standards, workflows, and conventions** for contributors  
 - Serve as a reference for onboarding new developers  
 
-This document complements the [README.md](../README.md) and [CONTRIBUTING.md](../CONTRIBUTING.md), which cover project overview, setup, and contribution guidelines.
+This document complements the [README](../README.md) and [CONTRIBUTING](../CONTRIBUTING.md), which cover project overview, setup, and contribution guidelines.
+
+## Table of content
+
+1. [Technology Stack](TechStack.md)
+2. [System Architecture](SystemArchitecture.md)
+3. [Data Design](DataDesign.md)
+4. [Security Design](SecurityDesign.md)
+
+
