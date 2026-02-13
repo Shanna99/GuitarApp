@@ -20,6 +20,12 @@ This document complements the [README](../README.md) and [CONTRIBUTING](../CONTR
 1. [Technology Stack](TechStack.md)
 2. [System Architecture](SystemArchitecture.md)
 3. [Data Design](DataDesign.md)
-4. [Security Design](SecurityDesign.md)
+4. [Non-Functional Requirements](NonFunctionalRequierments.md)
+5. [Security Design](SecurityDesign.md)
+6. [Error Handling Strategy]()
+7. [Testing Strategy]()
+8. [Deployment Strategy]()
+9. [Repository Structure]()
+10. [Pull Request Rules]()
 
 
