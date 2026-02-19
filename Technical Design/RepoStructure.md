@@ -1,5 +1,7 @@
 # Repo structure 
 
+This project will be a monorepo project
+
 This is how the files and folders in your repository are organized.
 
 Before writing code, decide:

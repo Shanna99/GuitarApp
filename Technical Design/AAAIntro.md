@@ -15,17 +15,18 @@ The purpose of this document is to:
 
 This document complements the [README](../README.md) and [CONTRIBUTING](../CONTRIBUTING.md), which cover project overview, setup, and contribution guidelines.
 
-## Table of content
+## Table of Contents
+
 
 1. [Technology Stack](TechStack.md)
 2. [System Architecture](SystemArchitecture.md)
 3. [Data Design](DataDesign.md)
-4. [Non-Functional Requirements](NonFunctionalRequierments.md)
+4. [Non-Functional Requirements](NonFunctionalRequirements.md)
 5. [Security Design](SecurityDesign.md)
-6. [Error Handling Strategy]()
-7. [Testing Strategy]()
-8. [Deployment Strategy]()
-9. [Repository Structure]()
-10. [Pull Request Rules]()
+6. [Error Handling Strategy](ErrorHandling.md)
+7. [Testing Strategy](TestingStrategy.md)
+8. [Deployment Strategy](Deployment.md)
+9. [Repository Structure](RepoStructure.md)
+10. [Pull Request Rules](PullRequestRules.md)
 
 
