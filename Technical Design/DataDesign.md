@@ -72,8 +72,8 @@ The Data Design chapter defines **how data is structured, stored, and accessed**
 ```
 #### Notes
 - `1..n` **means on-to-many relationship**
-- `FK` = Foreign Key, `PK` = Primary Key
-
+- `FK` = Foreign Key
+- `PK` = Primary Key
 
 ## Data formats
 
