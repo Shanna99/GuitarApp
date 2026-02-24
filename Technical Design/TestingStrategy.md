@@ -106,12 +106,23 @@ Main branch represents production-ready code.
 
 ## 3. Coverage Expectations
 
-- Core gameplay logic: High coverage (≥80% recommended)
-- Utility and validation functions: High coverage
-- UI logic: Moderate coverage
-- Engine-dependent features: Covered via Play Mode tests
+Test coverage measures the percentage of code executed during automated tests. Higher coverage provides greater confidence in system correctness and stability.
 
-Priority is given to testing deterministic logic (e.g., scoring and progress tracking).
+| Coverage | Meaning                  |
+| -------- | ------------------------ |
+| 50%      | Low                      |
+| 70%      | Acceptable               |
+| 80%+     | Strong                   |
+| 90%+     | Very strong (core logic) |
+
+Coverage targets for GuitarApp:
+
+- **Core gameplay logic:** Very strong coverage ≥90% (scoring, accuracy, streak tracking)  
+- **Utility and validation functions:** Strong coverage ≥80%  
+- **UI logic:** Acceptable coverage ≥70%  
+- **Engine-dependent features:** Covered via Play Mode tests  
+
+Priority is given to testing deterministic logic, ensuring critical gameplay mechanics are thoroughly verified.
 
 ---
 
