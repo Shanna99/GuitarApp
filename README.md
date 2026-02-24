@@ -2,7 +2,7 @@
 
 A modular, cross-platform guitar learning application that provides real-time note and chord detection, user feedback, and practice tracking.
 
-# ABOUT
+# About
 
 This project is a portfolio-grade guitar learning application focused on real-time audio analysis, clean architecture, and scalable software design.
 
@@ -37,13 +37,13 @@ The core goal of this project is twofold:
 
 We welcome contributions! See [CONTRIBUTING](CONTRIBUTING.md ) for guidelines.
 
-## KNOWN ISSUES
+## Known issues
 
 - NO APP
 - NO CODE
 
 
-## CONTACT
+## Contact
 Designed and developed by Shanna van Grevengoed
 
 [LinkedIn](https://www.linkedin.com/in/shanna-vangrevengoed-a50928153/)
