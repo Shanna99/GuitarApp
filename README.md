@@ -1,6 +1,6 @@
-# READ ME GUITAR APP 27/1/2026
+# READ ME GUITAR APP 24/2/2026
 
-This project is under active development and will evolve iteratively.
+A modular, cross-platform guitar learning application that provides real-time note and chord detection, user feedback, and practice tracking.
 
 # ABOUT
 
@@ -11,15 +11,31 @@ The core goal of this project is twofold:
 1. Build a serious learning tool for guitarists
 2. Demonstrate advanced software engineering skills required for a Software Architect role
 
-## BUILD WITH
+## Features
 
-- BLOOD
-- SWEAT
-- TEARS
+- Real-time audio input and analysis
+- Note and chord recognition
+- Visual feedback and practice logging
+- Multi-platform support (PC, mobile, console)
+- Scalable architecture with clean code patterns
 
-## GETTING STARTED
+## Technology Stack
 
-To run this project you need to have some more patience
+- **Frontend:** Unity / C#  
+- **Backend:** ASP.NET Core / C#  
+- **Database:** SQL Server  
+- **Audio Processing:** NWaves / Unity Audio  
+- **CI/CD:** GitHub Actions (automated builds, tests, and deployment)
+
+## Getting Started
+
+1. Clone the repo:  
+   ```bash
+   git clone https://github.com/Shanna99/GuitarApp.git
+
+# Contributing
+
+We welcome contributions! See [CONTRIBUTING](CONTRIBUTING.md ) for guidelines.
 
 ## KNOWN ISSUES
 
