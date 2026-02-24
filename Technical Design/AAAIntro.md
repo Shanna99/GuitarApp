@@ -28,5 +28,6 @@ This document complements the [README](../README.md) and [CONTRIBUTING](../CONTR
 8. [Deployment Strategy](Deployment.md)
 9. [Repository Structure](RepoStructure.md)
 10. [Pull Request Rules](PullRequestRules.md)
+11. [Branching Strategy](BranchStrategy.md)
 
 

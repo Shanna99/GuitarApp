@@ -26,3 +26,7 @@ Reasons for this could include:
 - Multiple developers working parallel
 - Relying (heavily) on commit-level debugging
 
+
+## Branch Protection Rules
+
+//to do
