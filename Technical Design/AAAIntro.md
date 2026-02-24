@@ -27,7 +27,7 @@ This document complements the [README](../README.md) and [CONTRIBUTING](../CONTR
 7. [Testing Strategy](TestingStrategy.md)
 8. [Deployment Strategy](Deployment.md)
 9. [Repository Structure](RepoStructure.md)
-10. [Pull Request Rules](PullRequestRules.md)
+10. [Pull Request & Merge Policy](PullRequestRules.md)
 11. [Branching Strategy](BranchStrategy.md)
 
 
