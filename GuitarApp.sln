@@ -24,6 +24,10 @@ Global
 		{43E2F0F7-2AB3-8933-48CC-67DAF2FA4081} = {1AE8ACA6-933B-BF2A-3671-3E2EAC007D16}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+<<<<<<< HEAD
 		SolutionGuid = {E93A00B3-3122-4BC1-A359-ACF2756BC532}
+=======
+		SolutionGuid = {27357322-8648-4A7D-B454-F6F253162F05}
+>>>>>>> refs/remotes/origin/main
 	EndGlobalSection
 EndGlobal
