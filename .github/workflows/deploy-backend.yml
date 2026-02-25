@@ -3,7 +3,9 @@ name: Deploy Backend to Azure
 on:
   push:
     branches:
-      - main
+      # - develop
+      - test-api
+      # - main
 
 jobs:
   build-and-deploy:
