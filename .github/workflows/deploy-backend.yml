@@ -33,5 +33,5 @@ jobs:
     - name: Deploy to Azure WebApp
       uses: azure/webapps-deploy@v2
       with:
-        app-name: "guitarapp-dxfqbwh0eycrg7fz"
+        app-name: "GuitarApp"
         package: ./published
