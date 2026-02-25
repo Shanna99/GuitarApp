@@ -13,7 +13,7 @@ The purpose of this document is to:
 - Define **coding standards, workflows, and conventions** for contributors  
 - Serve as a reference for onboarding new developers  
 
-This document complements the [README](../README.md) and [CONTRIBUTING](../CONTRIBUTING.md), which cover project overview, setup, and contribution guidelines.
+This document complements the [README](../../README.md) and [CONTRIBUTING](../../CONTRIBUTING.md), which cover project overview, setup, and contribution guidelines.
 
 ## Table of Contents
 
