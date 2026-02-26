@@ -19,6 +19,10 @@ jobs:
       with:
         dotnet-version: '8.0.x'
 
+    - name: Run code formatter
+      run: dotnet tool install -g dotnet-format
+    - run: dotnet format --verify-no-changes
+
     - name: Build
       run: dotnet build Backend/GuitarAppBackend.csproj --configuration Release
 
