@@ -19,6 +19,7 @@ app.UseSwaggerUI(c =>
     c.RoutePrefix = "swagger"; // optional, default is "swagger"
 });
 
+
 // Middlewares
 app.UseHttpsRedirection();
 app.UseAuthorization();
