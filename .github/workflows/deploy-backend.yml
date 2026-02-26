@@ -3,30 +3,36 @@ name: Deploy Backend to Azure
 on:
   push:
     branches:
-      # - develop
+      - develop
+      - main
       - test-api
-      # - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
+    # Check out the code from the repository
     steps:
     - uses: actions/checkout@v3
 
+    # Set up .NET SDK
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: '8.0.x'
 
-     # --- NEW: Auto-format C# code ---
+     # --------------
+     # Auto-format C# code 
+     # --------------
+     # Install dotnet-format tool
     - name: Install dotnet-format
       run: dotnet tool install -g dotnet-format
 
+    # Run auto-format on al C# code in the repository
     - name: Auto-format code
       run: dotnet format
 
-    # Optional: commit & push formatted changes back
+    # Commit & push formatted changes back to the branch
     - name: Commit and push formatted code
       run:
         git config --global user.name "github-actions"
@@ -35,17 +41,27 @@ jobs:
         git commit -m "Auto-format code" || echo "No changes to commit"
         git push origin HEAD:${{ github.ref }}
 
+    # --------------
+    # Build and deploy the backend
+    # --------------  
+    # Build the backend project in Release configuration
     - name: Build
       run: dotnet build Backend/GuitarAppBackend.csproj --configuration Release
 
+    # Publish the backend project to a folder named 'published'
     - name: Publish
       run: dotnet publish Backend/GuitarAppBackend.csproj -c Release -o published
 
+    # --------------
+    # Azure Deployment steps
+    # --------------
+    # log in to Azure using the credentials stored in GitHub Secrets
     - name: Azure Login
       uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+    # Deploy the published backend to Azure WebApp using the azure/webapps-deploy action
     - name: Deploy to Azure WebApp
       uses: azure/webapps-deploy@v2
       with:
