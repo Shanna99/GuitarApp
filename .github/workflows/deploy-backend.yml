@@ -61,14 +61,14 @@ jobs:
     # Azure Deployment steps
     # --------------
     # log in to Azure using the credentials stored in GitHub Secrets
-    - name: Azure Login
-      uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    #- name: Azure Login
+    #  uses: azure/login@v1
+    #  with:
+    #    creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     # Deploy the published backend to Azure WebApp using the azure/webapps-deploy action
-    - name: Deploy to Azure WebApp
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: "GuitarApp"
-        package: ./published
+    #- name: Deploy to Azure WebApp
+    #  uses: azure/webapps-deploy@v2
+    #  with:
+    #    app-name: "GuitarApp"
+    #    package: ./published
