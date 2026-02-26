@@ -43,8 +43,8 @@ jobs:
 
 
     # Run all tests in the Tests folder without building (since we will build the backend project later)
-    - name: Run all tests
-      run: dotnet test ./Tests/**/*.csproj --no-build --verbosity normal
+    - name: Run Tests
+      run: dotnet test ./Tests/**/*.csproj --verbosity detailed
    
     # --------------
     # Build and deploy the backend
